@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marktstadt 3D, Das Spiel von Angebot und Nachfrage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="overlay">
+    <div id="titleCard">
+      <h1>Marktstadt 3D</h1>
+      <h2>Das Spiel von Angebot und Nachfrage</h2>
+      <p>
+        Bewege dich durch die Stadt, handle klug und lerne Wirtschaft und Recht durch echte Entscheidungen.
+      </p>
+      <ul>
+        <li>WASD: Bewegung</li>
+        <li>Maus: Umschauen</li>
+        <li>E: Interagieren</li>
+        <li>ESC: Maus freigeben</li>
+      </ul>
+      <button id="startBtn">Spiel starten</button>
+      <p id="startStatus" class="muted">Bereit zum Start.</p>
+      <small>Hinweis: Für Three.js wird beim ersten Start Internet für das CDN benötigt.</small>
+    </div>
+  </div>
+
+  <div id="hud">
+    <div class="card">
+      <h3>Status</h3>
+      <div id="stats"></div>
+      <div id="goal"></div>
+    </div>
+    <div class="card">
+      <h3>Inventar</h3>
+      <div id="inventory"></div>
+    </div>
+    <div class="card">
+      <h3>Marktpreise (Fr.)</h3>
+      <div id="prices"></div>
+    </div>
+    <div class="card">
+      <h3>Ereignisse</h3>
+      <div id="events"></div>
+    </div>
+    <div class="card">
+      <h3>Questlog</h3>
+      <div id="quests"></div>
+    </div>
+  </div>
+
+  <div id="crosshair">+</div>
+
+  <div id="dialog" class="hidden">
+    <div id="dialogContent"></div>
+    <button id="closeDialog">Schliessen</button>
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
